@@ -1,0 +1,35 @@
+# project: cj71mxvox2lvz0197vgwbtfs3
+# version: 6
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type Link implements Node {
+  createdAt: DateTime!
+  description: String!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  url: String!
+}
+
+type User implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+}
+
+type Pic implements Node {
+  createdAt: DateTime!
+  picUrl: String!
+  description: String!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+}
