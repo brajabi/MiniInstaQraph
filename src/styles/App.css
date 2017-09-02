@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.picbox{
+  border: 1px solid #fff;
+  background: #fff;
+  width: 200px;
+  height: 250px;
+  float: left;
+  margin: 10px;
+  box-shadow: 0px 0px 2px #999;
+  text-align: center;
+}
+
+.picbox .pic{
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  margin-bottom: 5px;
+}
+.picbox .pic img{
+  width: 200px;
+  height: 200px;
+}
+
+.adder:hover{
+  background: #f00;
+}
+
+input{
+  margin: 7px;
+  font-size: 16px;
+  width: 90%;
+}
